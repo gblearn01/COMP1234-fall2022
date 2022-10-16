@@ -1,0 +1,17 @@
+#wrapper .page-header {
+  color: royalblue;
+  border: 5px yellow dotted;
+  padding: 3px;
+  background: linear-gradient(royalblue, #43444b);
+  color: white;
+  box-shadow: 15px 10px 50px 1px rgb(103, 82, 78);
+}
+#wrapper p:first-of-type::first-line {
+  font-style: italic;
+  color: red;
+}
+#wrapper p.last::first-letter {
+  color: royalblue;
+  font-size: 72pt;
+  font-family: cursive;
+}/*# sourceMappingURL=style.css.map */

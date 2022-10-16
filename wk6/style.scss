@@ -1,0 +1,31 @@
+$primary-color:royalblue;
+$first-letter-size:72pt;
+$shadow:15px 10px 50px 1px rgb(103, 82, 78);
+
+@mixin box($border_color){
+    border: 5px $border_color dotted;
+    padding:3px;
+    background: linear-gradient($primary-color, #43444b);
+    color:white;
+    box-shadow: $shadow;
+}
+
+#wrapper{
+   
+    .page-header{
+        color:$primary-color;
+        @include box(yellow);
+
+    }
+    p:first-of-type::first-line{
+        font-style: italic;
+        color:red;
+    }
+
+    p.last::first-letter{
+        color:royalblue;
+        font-size:$first-letter-size;
+        font-family: cursive;
+    }
+}
+
